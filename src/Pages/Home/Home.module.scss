@@ -1,0 +1,33 @@
+.title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 20px;
+    gap: 10px;
+    h1 {
+        font-family: "Playfair+Display", times, serif;
+        font-size: 80px;
+        font-weight: 500;
+        color: black;
+        line-height: 96px;
+      }
+      p {
+        font-family: "Mukta Mahee", arial, sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        color: rgb(108, 117, 125);
+        text-align: center;
+        line-height: 36px;
+      }
+  }
+  .products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 40px 40px;
+    gap: 20px;
+  }

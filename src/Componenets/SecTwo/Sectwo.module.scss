@@ -1,0 +1,80 @@
+.secTwo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  .containerTwo {
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    // gap: 10px;
+    .text {
+      width: 70%;
+      margin-bottom: 20px;
+      h2 {
+        font-family: "Mukta Mahee", arial, sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        color: rgb(179, 179, 179);
+        letter-spacing: 3px;
+      }
+    }
+    .cards {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .card {
+        width: 24%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        img {
+          width: 100%;
+        }
+
+        .content{
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+            h3{
+                font-family: "Playfair+Display", times, serif;
+                font-size: 20px;
+                font-weight: 500;
+                color:black;
+            }
+            .icons{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .star{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #E61C5D;
+                       gap: 3px;      
+                }
+
+                span{
+                    font-style: italic;
+                    font-family: "Mukta Mahee", arial, sans-serif;
+                    font-size: 15px;
+                    font-weight: 200;
+                    color:rgb(173, 181, 189);
+                }
+            }
+
+
+        }
+      }
+    }
+  }
+}

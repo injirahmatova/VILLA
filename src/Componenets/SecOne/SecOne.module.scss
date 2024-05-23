@@ -1,0 +1,71 @@
+.secOne {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 700px;
+  background-image: url("https://preview.colorlib.com/theme/villa/img/hero_1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+.overlay{
+    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 700px;
+  background-color: rgb(0,0,0,0.48);
+}
+
+  .text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 40px;
+    gap: 10px;
+    h1 {
+      font-family: "Playfair+Display", times, serif;
+      color: white;
+      font-size: 40px;
+      font-weight: 700;
+      span {
+        font-style: italic;
+      }
+    }
+    p {
+      font-family: "Mukta Mahee", arial, sans-serif;
+      color: white;
+      font-size: 15px;
+      font-weight: 200;
+    }
+    .btns {
+      width: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .pink {
+        padding: 10px 10px;
+        background-color: #e61c5d;
+        border: none;
+        border-radius: 20px;
+        color: white;
+        font-family: "Mukta Mahee", arial, sans-serif;
+        width: 65%;
+        cursor: pointer;
+      }
+      .transparent {
+        padding: 10px 10px;
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 20px;
+        color: white;
+        font-family: "Mukta Mahee", arial, sans-serif;
+        width: 30%;
+        cursor: pointer;
+      }
+    }
+  }
+}

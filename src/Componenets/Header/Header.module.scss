@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  .header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    position: absolute;
+    z-index: 1;
+    .container {
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .logo {
+        width: 20%;
+        a {
+          font-size: 30px;
+          font-weight: 700;
+          font-style: italic;
+          color: white;
+          font-family: "Playfair+Display", times, serif;
+               text-decoration: none;
+        }
+      }
+.icons{
+       width: 10%;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+}
+ 
+    }
+  }
+}

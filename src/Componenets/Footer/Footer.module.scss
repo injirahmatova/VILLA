@@ -1,0 +1,26 @@
+.footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    background-color: #1A1A1A;
+    .contFour{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p{
+            font-size: 16px;
+            font-weight: 200;
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .iconss{
+            width: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color:rgba(255, 255, 255, 0.5);
+        }
+    }
+}
