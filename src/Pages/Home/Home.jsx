@@ -10,8 +10,10 @@ import SecTwo from "../../Componenets/SecTwo/SecTwo";
 import styles from "../Home/Home.module.scss";
 const Home = () => {
   const [data, setData] = useState([]);
+
   const getData = () => {
-    axios.get("https://dummyjson.com/products").then((res) => {
+    axios.get("https://dummyjson.com/products")
+    .then((res) => {
       setData(res.data.products);
     });
   };
@@ -20,11 +22,11 @@ const Home = () => {
   }, []);
 
   const addToBasket = (item) => {
-    axios.post('https://664d9087ede9a2b55653ebb7.mockapi.io/basket/basket', item)
+    axios.post('https://664f0f4bfafad45dfae223d9.mockapi.io/basket/basket', item)
   }
 
   const addToWishlist = (item) => {
-    axios.post('https://664d9087ede9a2b55653ebb7.mockapi.io/basket/basket', item)
+    axios.post('https://664f0f4bfafad45dfae223d9.mockapi.io/basket/basket', item)
   }
 
 
@@ -45,7 +47,7 @@ const Home = () => {
         </p>
         <div className={styles.products}>
           {data &&
-            data.map((item) => <ProductCart key={item.id} item={item}  addToBasket={() => addToBasket(item)}  addToWishlist={()=>addToWishlist (item)}  />)}
+            data.map((item) => <ProductCart key={item.id} item={item}  addToCart={() => addToBasket(item)}  addToWish={()=>addToWishlist (item)}  />)}
         </div>
       </div>
 

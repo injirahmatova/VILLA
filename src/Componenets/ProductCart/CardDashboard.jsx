@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../ProductCart/ProductCart.module.scss";
-const ProductCart = ({ item, addToCart, addToWish }) => {
+
+const CardDashboard = ({ item, sil, }) => {
   return (
     <>
       <div className={styles.card}>
@@ -10,8 +11,8 @@ const ProductCart = ({ item, addToCart, addToWish }) => {
           <p>{item?.price}</p>
           <span>{item?.description}</span>
           <div className={styles.btns}>
-            <button onClick={addToCart}>Add To Cart</button>
-            <button onClick={addToWish}>Add To Wishlist</button>
+            <button onClick={sil}>Delete</button>
+            <button >Add To Wishlist</button>
           </div>
         </div>
       </div>
@@ -19,4 +20,4 @@ const ProductCart = ({ item, addToCart, addToWish }) => {
   );
 };
 
-export default ProductCart;
+export default CardDashboard;

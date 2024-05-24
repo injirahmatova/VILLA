@@ -1,17 +1,22 @@
 import React from "react";
 import styles from "../ProductCart/ProductCart.module.scss";
-const CardBasket = () => {
+
+const CardBasket = ({ item, sil, addToWish }) => {
   return (
-    <div>
+    <>
       <div className={styles.card}>
         <img src={item?.thumbnail} alt="img" />
         <div className={styles.text}>
           <h4>{item?.title}</h4>
           <p>{item?.price}</p>
-          <button onClick={sil}>Delete</button>
+          <span>{item?.description}</span>
+          <div className={styles.btns}>
+            <button onClick={sil}>Delete</button>
+            <button onClick={addToWish}>Add To Wishlist</button>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -1,15 +1,16 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Header from "../../Componenets/Header/Header";
-import CardBasket from "../../Componenets/ProductCart/CardBasket";
-import styles from "../Basket/Basket.module.scss";
+import CardWishlist from "../../Componenets/ProductCart/CardWishlist";
 
-const Basket = () => {
+import styles from "../Wishlist/Wishlist.module.scss";
+
+const Wishlist = () => {
   const [data, setData] = useState([]);
 
   const getData = () => {
     axios
-      .get("https://664f0f4bfafad45dfae223d9.mockapi.io/basket/basket")
+      .get("https://664f0f4bfafad45dfae223d9.mockapi.io/basket/wishlist")
       .then((res) => {
         setData(res.data);
       });
@@ -20,11 +21,8 @@ const Basket = () => {
 
   const deleteItem = (id) => {
     axios.delete(
-      `https://664f0f4bfafad45dfae223d9.mockapi.io/basket/basket/${id}`
+      `https://664f0f4bfafad45dfae223d9.mockapi.io/basket/wishlist/${id}`
     );
-
-    
-
     setTimeout(() => {
       getData();
     }, 1000);
@@ -33,14 +31,13 @@ const Basket = () => {
   return (
     <div>
       <Header />
-
       <div className={styles.title}>
-        <h1>BASKET</h1>
+        <h1>WISHLIST</h1>
       </div>
       <div className={styles.products}>
         {data &&
           data.map((item) => (
-            <CardBasket
+            <CardWishlist
               key={item.id}
               item={item}
               sil={() => deleteItem(item.id)}
@@ -51,4 +48,4 @@ const Basket = () => {
   );
 };
 
-export default Basket;
+export default Wishlist;
